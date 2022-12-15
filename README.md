@@ -7,6 +7,14 @@ This is the MEDSL repository for election returns from the 2022 General Election
 
 So far, the following states are included in the dataset:
 
+## Indiana
+
+Added 2022-12-15.
+
+* Only 36 of Indiana's 92 counties have so far released precinct-level election results in 2022. We publish these partial results now because, in 2020, only 56 counties ultimately released precinct-level results, so it is not guaranteed that Indiana's full 2022 election results will ultimately be released at the precinct level.
+
+* We cannot conduct our usual county-level vote aggregation check in this state because counties reported at _either_ the precinct level or the county level, so the two levels of vote totals cannot be compared. So if you do want to use these data, we caution that results are non-systematically missing. Please carefully check the accuracy of any data you use from this state.
+
 ## Montana
 
 Added 2022-12-07. 
