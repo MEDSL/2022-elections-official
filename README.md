@@ -19,6 +19,10 @@ Added 2022-12-15.
 
 Added 2022-12-07. 
 
+## Oklahoma
+
+Added 2022-12-27. 
+
 ## Tennessee
 
 Added 2022-12-25. 
