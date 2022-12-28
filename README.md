@@ -7,6 +7,10 @@ This is the MEDSL repository for election returns from the 2022 General Election
 
 So far, the following states are included in the dataset:
 
+## District of Columbia
+
+Added 2022-12-27. 
+
 ## Indiana
 
 Added 2022-12-15.
