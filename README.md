@@ -23,6 +23,12 @@ Added 2022-12-15.
 
 * We cannot conduct our usual county-level vote aggregation check in this state because counties reported at _either_ the precinct level or the county level, so the two levels of vote totals cannot be compared. So if you do want to use these data, we caution that results are non-systematically missing. Please carefully check the accuracy of any data you use from this state.
 
+## Maryland
+
+Added 2022-12-31.
+
+Maryland reported results separately from its "Mail-in Ballot 1 Canvass", which was held on November 10, 2022, and its "Mail-in Ballot 2 Canvass", which was held on November 18, 2022. Our dataset retains this distinction.
+
 ## Montana
 
 Added 2022-12-07. 
