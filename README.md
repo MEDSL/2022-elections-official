@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map.png "Title")
+![](precinct_progress_map_.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this Github repository. 
@@ -54,3 +54,7 @@ Added 2022-12-28.
 Added 2023-01-04.
 
 * Some pairs of rows in the dataset are identical, but each records real votes for which there is no disambiguating information available. These are all write-in votes for state house candidates. Washington's state house has contests of magnitude 2 for which write-in votes were reported separately for each of the two seats in a district, but without disambiguation, so these will appear to be either exactly duplicated, or duplicated up to the vote count. We retain them as separate rows because to combine them would be to unnecessarily remove information, but for any analysis which requires knowing the total number of write-in votes for an office in a precinct, these rows should be summed.
+
+## Wyoming
+
+Added 2023-01-11.
