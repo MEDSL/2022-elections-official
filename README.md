@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map_.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this Github repository. 
@@ -28,6 +28,12 @@ Added 2022-12-15.
 Added 2022-12-31.
 
 * Maryland reported results separately from its "Mail-in Ballot 1 Canvass", which was held on November 10, 2022, and its "Mail-in Ballot 2 Canvass", which was held on November 18, 2022. Our dataset retains this distinction.
+
+## Minnesota
+
+Added 2023-01-13.
+
+* In the data provided by the state, write-in candidate's names are not individually identified, but it appears that the vote total for each write-in candidate is reported individually. This means that there can be more than one candidate named "WRITE-IN" in a precinct. We retain these rows separately rather than aggregating them, in the interest of keeping as much data as possible available. In our dataset this leads to thousands of duplicated rows, or rows that are identical up to the number of votes. However, that is the only cause of duplicates; all duplicated rows are actually the vote totals of (presumably distinct) write-in candidates. The total number of write-in votes is also known to match the number of write-in votes reported at the electoral district level.
 
 ## Montana
 
