@@ -47,6 +47,10 @@ Added 2023-01-11.
 
 Added 2022-12-27. 
 
+## South Dakota
+
+Added 2023-01-15. 
+
 ## Tennessee
 
 Added 2022-12-25. 
