@@ -51,7 +51,13 @@ Added 2022-12-07.
 
 ## New Mexico
 
-Added 2023-01-11. 
+Added 2023-01-11.
+
+## North Carolina
+
+Added 2023-01-24.
+
+* North Carolina reports the names of candidates that were written in. In five cases, there appears to be a candidate name written in whose name seems to be misspelling of the name of a candidate who ran for another office. These likely misspelling cases were not changed. The cases were: SAM TREADWAY and SAM TREADAWAY, TURNER VOTIPKA and TURNER VOTIPIKA, KEISHA SANDIDGE and KESHIA SANDIDGE, NATALIE MURDOCK and NATALIE S MURDOCK, and SHANNON WHITAKER and SHANNON CRAVEN WHITAKER.
 
 ## Oklahoma
 
