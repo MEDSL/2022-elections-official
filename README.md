@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map_.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -144,6 +144,12 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
   This approach does result in records of candidates actually recieving 0 votes in a precinct in which they were selectable being dropped, but we believe this is preferable to not dropping these rows, because the dataset is unmanageably large when all the fictitious 0-vote rows are included.
 
 * Ohio does not provide precinct-level vote totals for write-in candidates, but they do provide county-level totals. The cleaned dataset includes records for these county totals with the precinct name "COUNTY FLOATING". 
+
+### South Carolina
+
+*Added:* 2023-02-01.
+
+*Source*: OpenElections, https://github.com/openelections/openelections-data-sc/tree/master/2022
 
 ### South Dakota
 
