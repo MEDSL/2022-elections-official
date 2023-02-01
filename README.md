@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map.png "Title")
+![](precinct_progress_map_.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this Github repository. 
@@ -56,6 +56,20 @@ Added 2023-01-13. Last updated 2023-01-27.
 ## Montana
 
 Added 2022-12-07. 
+
+## New Hampshire
+
+Added 2023-02-01.
+
+* State House district numbers are unique only up to county name, so to obtain statewide unique state house district numbers, concatenate them with the county name.
+
+* Candidates' full names were not listed in official results for many races, and we did not alter the candidate names in these cases. In particular, New Hampshire does not provide candidate last names for most races. As such, when handling candidates, one will need to concatenate the district, office, and county to individuate between candidates who share a last name.
+
+* Some standardization was required to ensure that the same precinct is always referred to by the same name. New Hampshire's official results inconsistenly abbreviated precinct names, so all abbreviated precinct names were unabbreviated. The official results also occasionally left off the apostrophe for the precinct "SARGENT'S PURCHASE". In the cases where it was missing, it was manually added.
+
+* Rockingham county lists 7 votes as having been received for the state house race in its 26th district without listing which candidate recieved those votes. Based on the general format, this was manually changed to be `SCATTER` in our cleaned dataset.
+
+* Two races had multiple recounts. To distinguish this, the second recount is referred to is labeled as "GEN RECOUNT 2".
 
 ## New Mexico
 
