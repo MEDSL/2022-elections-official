@@ -79,7 +79,7 @@ So far, the following states are included in the dataset:
 
 *Added:* 2022-12-07. 
 
-*Source:* https://electionresults.mt.gov/ResultsList.aspx
+*Source:* State government, https://electionresults.mt.gov/ResultsList.aspx
 
 ## New Hampshire
 
@@ -157,7 +157,7 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
 
 *Added:* 2023-01-04.
 
-*Source:* https://results.vote.wa.gov/results/20221108/turnout.html and https://kingcounty.gov/depts/elections/results/2022/202211.aspx 
+*Source:* State government, https://results.vote.wa.gov/results/20221108/turnout.html and https://kingcounty.gov/depts/elections/results/2022/202211.aspx 
 
 *Notes:*
 * Some pairs of rows in the dataset are identical, but each records real votes for which there is no disambiguating information available. These are all write-in votes for state house candidates. Washington's state house has contests of magnitude 2 for which write-in votes were reported separately for each of the two seats in a district, but without disambiguation, so these will appear to be either exactly duplicated, or duplicated up to the vote count. We retain them as separate rows because to combine them would be to unnecessarily remove information, but for any analysis which requires knowing the total number of write-in votes for an office in a precinct, these rows should be summed.
