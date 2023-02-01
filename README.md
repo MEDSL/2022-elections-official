@@ -70,7 +70,7 @@ So far, the following states are included in the dataset:
 
 ### Louisiana
 
-*Added:* 2023-01-01.
+*Added:* 2023-02-01.
 
 *Source:* State government, https://voterportal.sos.la.gov/static/2022-11-08
 
