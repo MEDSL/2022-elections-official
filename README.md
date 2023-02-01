@@ -3,17 +3,27 @@
 ![](precinct_progress_map_.png "Title")
 
 ## Repository info
-This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this Github repository. 
+This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
 
+## General usage notes
+### Methods and accuracy
+For any questions about how we clean and Quality Assure these data, and how accurate they are, please consult this paper, which answers those questions for our last three data efforts (2016, 2018, and 2020): https://www.nature.com/articles/s41597-022-01745-0. We ask that when you are using the data, please cite the dataset itself, and only cite that paper for discussions of how the data were created and why they are reliable.
+
+### Warnings
+In general, users need to exercise real caution when computing descriptive statistics. Please make sure you understand exactly which rows belong in the computation you're performing. Here are two of the most common issues:
+* Sometimes the way that states report data generates fictitious zero-vote rows, where a candidate is recorded as getting no votes in a precinct where they did not actually appear on the ballot. It is not generally possible to ensure that all real zero-vote totals are recorded while no fictitious zero-vote totals are recorded. This could affect, for example, measures of central tendency.
+* We typically retain exactly the modes that states report. This can lead to double-counting if users do not select the correct modes, for example if modes are split apart *and* a mode value of `TOTAL` is included. Users should make sure that any analysis includes votes of each mode once.
+
+## State-specific information
 So far, the following states are included in the dataset:
 
-## Alabama
+### Alabama
 
 *Added:* 2022-12-29. 
 
 *Source:* State government, https://www.sos.alabama.gov/alabama-votes/voter/election-data
 
-## Alaska
+### Alaska
 
 *Added:* 2023-01-18.
 
@@ -26,13 +36,13 @@ So far, the following states are included in the dataset:
 
 * Small discrepancies (substantially less than 1%) are present between the precinct-level US House race and the announced statewide vote totals in the state's "RCV Detailed Report", which may be due to unresolved write-in votes. The other statewide races, however, match the announced statewide totals exactly.
 
-## District of Columbia
+### District of Columbia
 
 *Added:* 2022-12-27. 
 
 *Source:* City government, https://electionresults.dcboe.org/election_results/2022-General-Election
 
-## Hawaii
+### Hawaii
 
 *Added:* 2022-01-26.
 
@@ -41,7 +51,7 @@ So far, the following states are included in the dataset:
 *Notes:*
 * The precinct-level results for the US Senate race report slightly fewer votes than the statewide vote counts do, but these discrepancies are very small (a few dozen votes), and they only affects two candidates, neither of whom are the major party nominees. The US House and governor races match exactly the district- or state-level vote counts.
 
-## Indiana
+### Indiana
 
 *Added:* 2022-12-15.
 
@@ -52,13 +62,13 @@ So far, the following states are included in the dataset:
 
 * We cannot conduct our usual county-level vote aggregation check in this state because counties reported at _either_ the precinct level or the county level, so the two levels of vote totals cannot be compared. So if you do want to use these data, we caution that results are non-systematically missing. Please carefully check the accuracy of any data you use from this state.
 
-## Kansas
+### Kansas
 
 *Added:* 2023-01-26.
 
 *Source:* State government, https://sos.ks.gov/elections/elections-results.html
 
-## Maryland
+### Maryland
 
 *Added:* 2022-12-31.
 
@@ -67,7 +77,7 @@ So far, the following states are included in the dataset:
 *Notes:*
 * Maryland reported results separately from its "Mail-in Ballot 1 Canvass", which was held on November 10, 2022, and its "Mail-in Ballot 2 Canvass", which was held on November 18, 2022. Our dataset retains this distinction.
 
-## Minnesota
+### Minnesota
 
 *Added:* 2023-01-13.
 
@@ -75,13 +85,13 @@ So far, the following states are included in the dataset:
 
 *Source:* State government, https://electionresults.sos.state.mn.us/Select/MediaFiles/Index?ersElectionId=149
 
-## Montana
+### Montana
 
 *Added:* 2022-12-07. 
 
 *Source:* State government, https://electionresults.mt.gov/ResultsList.aspx
 
-## New Hampshire
+### New Hampshire
 
 *Added:* 2023-02-01.
 
@@ -98,13 +108,13 @@ So far, the following states are included in the dataset:
 
 * Two races had multiple recounts. To distinguish this, the second recount is referred to is labeled as "GEN RECOUNT 2".
 
-## New Mexico
+### New Mexico
 
 *Added:* 2023-01-11.
 
 *Source:* State government, https://electionresults.sos.state.nm.us/ and https://candidateportal.servis.sos.state.nm.us/CandidateList.aspx?eid=2838&cty=99
 
-## North Carolina
+### North Carolina
 
 *Added:* 2023-01-24.
 
@@ -114,13 +124,13 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
 *Notes:*
 * North Carolina reports the names of candidates that were written in. In five cases, there appears to be a candidate name written in whose name seems to be misspelling of the name of a candidate who ran for another office. These likely misspelling cases were not changed. The cases were: SAM TREADWAY and SAM TREADAWAY, TURNER VOTIPKA and TURNER VOTIPIKA, KEISHA SANDIDGE and KESHIA SANDIDGE, NATALIE MURDOCK and NATALIE S MURDOCK, and SHANNON WHITAKER and SHANNON CRAVEN WHITAKER.
 
-## Oklahoma
+### Oklahoma
 
 *Added:* 2022-12-27. 
 
 *Source:* State government, https://results.okelections.us/OKER/?elecDate=20221108
 
-## Ohio
+### Ohio
 
 *Added:* 2023-01-19.
 
@@ -135,25 +145,25 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
 
 * Ohio does not provide precinct-level vote totals for write-in candidates, but they do provide county-level totals. The cleaned dataset includes records for these county totals with the precinct name "COUNTY FLOATING". 
 
-## South Dakota
+### South Dakota
 
 *Added:* 2023-01-15. 
 
 *Source:* State government, https://electionresults.sd.gov/Default.aspx and https://vip.sdsos.gov/candidatelist.aspx?eid=471
 
-## Tennessee
+### Tennessee
 
 *Added:* 2022-12-25. 
 
 *Source:* State government, https://sos.tn.gov/elections/results
 
-## Virginia
+### Virginia
 
 *Added:* 2022-12-28. 
 
 *Source:* State government, https://apps.elections.virginia.gov/SBE_CSV/ELECTIONS/ELECTIONRESULTS/2022/
 
-## Washington
+### Washington
 
 *Added:* 2023-01-04.
 
@@ -162,7 +172,7 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
 *Notes:*
 * Some pairs of rows in the dataset are identical, but each records real votes for which there is no disambiguating information available. These are all write-in votes for state house candidates. Washington's state house has contests of magnitude 2 for which write-in votes were reported separately for each of the two seats in a district, but without disambiguation, so these will appear to be either exactly duplicated, or duplicated up to the vote count. We retain them as separate rows because to combine them would be to unnecessarily remove information, but for any analysis which requires knowing the total number of write-in votes for an office in a precinct, these rows should be summed.
 
-## Wyoming
+### Wyoming
 
 *Added:* 2023-01-11.
 
