@@ -51,6 +51,21 @@ So far, the following states are included in the dataset:
 *Notes:*
 * The precinct-level results for the US Senate race report slightly fewer votes than the statewide vote counts do, but these discrepancies are very small (a few dozen votes), and they only affects two candidates, neither of whom are the major party nominees. The US House and governor races match exactly the district- or state-level vote counts.
 
+### Idaho
+
+*Added:* 2023-02-08.
+
+*Source:* State government, https://sos.idaho.gov/elections-division/election-results/
+
+*Notes:*
+* The data were released by the state in spreadsheets with baroque semi-structured designs, so we wrote a custom script to parse those spreadsheets. While we are not aware of any outstanding errors produced by this process, users should be aware that the re-structuring process was substantially involved for this state, and that some information about office descriptions may have been implicitly encoded visually rather than being written out explicitly and consequently would not have been capturable by an automated parser.
+
+* Rows labeled 'PERCENT' are nearly always -- but not quite always -- between 0 and 1. This suggests that they are usually proportions, not percentages. We have not altered the values or the labels.
+
+* The raw data reports some precincts multiple times for COLLEGE OF WESTERN IDAHO TRUSTEE, but with different vote totals. We retain these rows, though this practice causes nearly duplicated rows which are identical up to vote totals (and in, one case, a coincidental exact duplicate), since they presumably refer to different precincts but using non-unique identifiers.
+
+* Many different types of meta-information at different levels of aggregation are reported in the raw data under the label 'VOTING STATISTICS'. Where this information is exactly duplicated, we have dropped it. But in the many cases where the information represents different vote totals under the same label without explicit disambiguation in the raw data, we leave it as is.
+
 ### Indiana
 
 *Added:* 2022-12-15.
