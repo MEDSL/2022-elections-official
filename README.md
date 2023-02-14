@@ -77,6 +77,15 @@ So far, the following states are included in the dataset:
 
 * We cannot conduct our usual county-level vote aggregation check in this state because counties reported at _either_ the precinct level or the county level, so the two levels of vote totals cannot be compared. So if you do want to use these data, we caution that results are non-systematically missing. Please carefully check the accuracy of any data you use from this state.
 
+### Iowa
+
+*Added:* 2023-02-14.
+
+*Source:* OpenElections, https://github.com/openelections/openelections-data-ia/tree/master/2022
+
+*Notes:*
+* The sum of precinct-level votes differed from the announced constituency-level vote totals by well under 1% in the races for governor and US House districts 2, 3, and 4. The totals were off by about 1% in US House district 1. However, all totals matched exactly in the Us Senate race.
+
 ### Kansas
 
 *Added:* 2023-01-26.
