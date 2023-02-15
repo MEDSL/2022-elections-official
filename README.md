@@ -42,6 +42,12 @@ So far, the following states are included in the dataset:
 
 *Source:* City government, https://electionresults.dcboe.org/election_results/2022-General-Election
 
+### Georgia
+
+*Added:* 2023-02-15
+
+*Source:* State government, https://results.enr.clarityelections.com/GA/115465/web.307039/#/reporting
+
 ### Hawaii
 
 *Added:* 2022-01-26.
