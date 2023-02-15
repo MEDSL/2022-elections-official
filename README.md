@@ -44,7 +44,7 @@ So far, the following states are included in the dataset:
 
 ### Georgia
 
-*Added:* 2023-02-15
+*Added:* 2023-02-15.
 
 *Source:* State government, https://results.enr.clarityelections.com/GA/115465/web.307039/#/reporting
 
