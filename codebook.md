@@ -1,7 +1,7 @@
 ## Fields:
 
 ### precinct: 
-The string id for the smallest election reporting unit of a state. Should generally be left the way it is, except under two conditions. 1) if the precinct is actually some type of total or aggregation of precinct results, then it should be dropped. 2) If we already know what the precinct id looks like from some type of precinct shapefile from a state, then the precinct id should be structured to match the shapefile precinct id. 
+The string id for the smallest election reporting unit of a state. Should generally be left the way it is, except under two conditions. 1) if the precinct is actually some type of total or aggregation of precinct results, then it should be dropped. 2) If we already know what the precinct id looks like from some type of precinct shapefile from a state, then the precinct id should be structured to match the shapefile precinct id. Values that include the string `FLOATING` refer to totals announced at a higher level of aggregation, so for example a county name of `COUNTY FLOATING` represents data reported at the county level.
 
 ### office: 
 The field which contains the name of the elected position for the race. These should be standardized and stripped of the district code, candidate names, parties, etc. that belong in the other fields. All entries should be in upper case. Standard entries are US PRESIDENT, US SENATE, US HOUSE, GOVERNOR, STATE SENATE, and STATE HOUSE.
@@ -19,7 +19,7 @@ The upper case voting mode for how the election results will be reported. For re
 The numeric value of votes for a given entry. Ensure that commas and the like are not included so as to ensure that it is numeric and not string, and any missing values should be coded as 0. 
 
 ### county_name:
-The upper case name of the county. 
+The upper case name of the county. As with precincts, values that include the string `FLOATING` refer to totals announced at a higher level of aggregation, so for example a county name of `STATE FLOATING` represents data reported at the state level.
 
 ### county_fips: 
 The Census 5-digit code for a given county. Structured such that the first two digits are the state fips, and the last three digits are the county part of the fips. Ensure that each component is string padded such that if a state's or county's fip is one digit, i.e. AL, then padded such that it might take the form of 01020. 
