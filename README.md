@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map_.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -159,6 +159,12 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
 
 *Notes:*
 * North Carolina reports the names of candidates that were written in. In five cases, there appears to be a candidate name written in whose name seems to be misspelling of the name of a candidate who ran for another office. These likely misspelling cases were not changed. The cases were: SAM TREADWAY and SAM TREADAWAY, TURNER VOTIPKA and TURNER VOTIPIKA, KEISHA SANDIDGE and KESHIA SANDIDGE, NATALIE MURDOCK and NATALIE S MURDOCK, and SHANNON WHITAKER and SHANNON CRAVEN WHITAKER.
+
+### North Dakota
+
+*Added:* 2023-02-23.
+
+*Source:* State government, https://results.sos.nd.gov/Default.aspx?map=Cty&mode=0
 
 ### Oklahoma
 
