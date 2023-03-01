@@ -144,6 +144,19 @@ So far, the following states are included in the dataset:
 
 * Two races had multiple recounts. To distinguish this, the second recount is referred to is labeled as "GEN RECOUNT 2".
 
+### New Jersey
+
+*Added:* 2023-03-01.
+
+*Source:* State government, https://www.state.nj.us/state/elections/election-information-2022.shtml
+
+*Notes:*
+* The state of New Jersey does not collect and distribute precinct-level election results, so we instead provide results at the township level. In 2022, these are available only for state or federal offices. Because New Jersey elects its state legislators in odd-numbered years, in 2022 the only state or federal elections were for the US House, and one special election each to their upper and lower legislative chambers.
+
+* We mark the magnitude as 1 in all races because, even though New Jersey's lower legislative chamber does use multi-member districts, the special election in this dataset elected only one candidate.
+
+* In counties where Federal ballots are reported, we label the other modes 'NON-FEDERAL', under the assumption that they contain everything except federal overseas ballots.
+
 ### New Mexico
 
 *Added:* 2023-01-11.
@@ -186,6 +199,12 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
   This approach does result in records of candidates actually recieving 0 votes in a precinct in which they were selectable being dropped, but we believe this is preferable to not dropping these rows, because the dataset is unmanageably large when all the fictitious 0-vote rows are included.
 
 * Ohio does not provide precinct-level vote totals for write-in candidates, but they do provide county-level totals. The cleaned dataset includes records for these county totals with the precinct name "COUNTY FLOATING". 
+
+### Rhode Island
+
+*Added:* 2023-02-28.
+
+*Source:* State government, https://www.ri.gov/election/results/2022/general_election/data/
 
 ### South Carolina
 
