@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map_.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -103,6 +103,18 @@ So far, the following states are included in the dataset:
 *Added:* 2023-02-01.
 
 *Source:* State government, https://voterportal.sos.la.gov/static/2022-11-08
+
+### Maine
+
+*Added:* 2023-03-02.
+
+*Source:* State government, https://www.maine.gov/sos/cec/elec/results/2022/2022GeneralElectionNonRankedChoiceOffices.html and https://www.maine.gov/sos/cec/elec/results/2022/2022GeneralElectionRankedChoiceOffices.html
+
+*Notes:*
+* Because of the structure of election administration in Maine, these data are available at the level of towns rather than precinct-level.
+* The county FIPS codes correspond to the literal counties, but jurisdiction FIPS codes represent the FIPS of the administering body. In nearly every case we were able to match the name of the town as provided in the election result data to the name of a town in a list of local government FIPS codes in Maine. In some very few cases we were not able to identify which entity a particular jurisdiction in the election data referred to in the FIPS code crosswalk, and in these cases we simply assigned the row a `jurisdiction_fips` value equal to the FIPS code of the county.
+* Maine released ranked choice data for one of their two US House races, in which Maine uses Instant Runoff Voting. In the district for which the government released ranked data, our vote total column specifies the number of people who ranked each candidate in the first position on their ranked ballot
+* 15 rows are duplicated up to vote totals. These near-duplicates are present in the raw data, and they remain near-duplicates in our dataset because disambiguating information is not available.
 
 ### Maryland
 
