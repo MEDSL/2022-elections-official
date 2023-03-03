@@ -44,7 +44,7 @@ So far, the following states are included in the dataset:
 
 ### Florida
 
-*Added:* 2023-03-03
+*Added:* 2023-03-03.
 
 *Source:* State government, https://dos.myflorida.com/elections/data-statistics/elections-data/precinct-level-election-results/
 
