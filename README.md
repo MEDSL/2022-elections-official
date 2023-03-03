@@ -42,6 +42,15 @@ So far, the following states are included in the dataset:
 
 *Source:* City government, https://electionresults.dcboe.org/election_results/2022-General-Election
 
+### Florida
+
+*Added:* 2023-03-03
+
+*Source:* State government, https://dos.myflorida.com/elections/data-statistics/elections-data/precinct-level-election-results/
+
+*Notes:*
+* The precinct field is formed as follows: `precinctCode_pollingPlaceName`. For ease of use, we follow this convention even when one of those values is empty, or when one of those values is included in (or equal to) the other one.
+
 ### Georgia
 
 *Added:* 2023-02-15.
