@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map_.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -133,6 +133,17 @@ So far, the following states are included in the dataset:
 
 *Notes:*
 * Maryland reported results separately from its "Mail-in Ballot 1 Canvass", which was held on November 10, 2022, and its "Mail-in Ballot 2 Canvass", which was held on November 18, 2022. Our dataset retains this distinction.
+
+### Michigan
+
+*Added:* 2023-03-17
+
+*Source: OpenElections, https://github.com/openelections/openelections-data-mi/tree/master/2022
+
+* The major party candidates' vote totals in the Governor and US House races are all within 1% of their state- or district-wide totals except in district 7, where a few thousand votes are missing for both parties.
+* There are substantial rows that are duplicated, or duplicated up to vote totals. These are cases where distinguishing information was not available for different precincts. It should be assumed that these refer to different precincts, but without distinguishing precinct names we do not know which precinct is which. For this reason users should be wary of aggregating data by precinct name, since that may combine different precincts which are not disambiguated in the raw data.
+* Some candidates were reported as recieving both write-in votes and non-write-in votes. We retain this distinction.
+* There are a small number of rows of straight party votes where different parties were reported in the candidate and party columns.
 
 ### Minnesota
 
