@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map.png "Title")
+![](precinct_progress_map_.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -255,6 +255,19 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
 *Added:* 2022-12-25. 
 
 *Source:* State government, https://sos.tn.gov/elections/results
+
+### Vermont
+
+*Added:* 2023-03-20.
+
+*Source:* State government, https://sos.vermont.gov/elections/election-info-resources/elections-results-data/
+
+*Notes:*
+* District values were only available in a separate file that listed the total candidate votes within each district. We therefore matched simply by candidate name, subject to one arbitrary restriction. A major problem is that candidates will commonly be written in by a voter in one district when that candidate is actually contesting a different district. So, we match district labels onto candidate names, and then only overwrite an existing district label when a candidate appears in a(n alphabetically) subsequent district with more than (arbitrarily) 20 votes. We then manually verified that major party nominees in every house and senate district have the correct district label, but of course we cannot guarantee that is the case for minor party or write-in candidates, who will have been assigned incorrect district labels in exactly the case that they or someone with the same name received 20 or more votes in a district that comes later in the alphabet. We are not aware of any such cases, but they may exist. Note also that matching on a combination of candidate name and candidate vote totals would not correct these errors because these are overwhelmingly (if not exclusively) candidates with extremely small vote totals, who may commonly receive (say) 1 vote in multiple localities. The major effect is that names which cannot be disambiguated -- `BLANK VOTES`, `OVERVOTES`, and `UNDERVOTES` especially -- have blank district labels. However, their other geographic information is included.
+
+* Write-in values must be inferred, since the original dataset includes all write-in candidates by name with no information that distinguishes them from other candidates, exactly as though they were not write-in candidates. We generated the write-in field by first matching to a dataset which contained official declared candidates' party labels, then manually ensuring that all major party nominees for partisan offices had party labels, and finally assuming that all other candidates which were not listed in the declared candidates file must be write-in candidates.
+
+* We drop any row with 0 votes. The cost of doing so is that candidates may sometimes legitimately receive 0 votes in a region in which they could indeed be selected on the ballot. However, we judge that dropping 0 vote rows is more correct than not in this case. The reason is that the raw data are exceptionally sparse: in the cleaned dataset, if we do not drop zero vote rows, the resulting file has more than 3,500,000 rows and takes up 481 MB. Dropping all 0-vote rows shrinks the file by a factor of 100. This must include ample fictitious 0 vote rows, in which candidates were not selectable in a jurisdiction but nevertheless appeared in the election results as receiving no votes there -- and in many cases, write-in candidates who were selectable nowhere, received a vote in one locality, and are recorded as receiving 0 votes everywhere else. There is no way in general to distinguish between legitimate and fictitious 0-vote rows in election result data, so the most correct approach is to drop all such rows.
 
 ### Virginia
 
