@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map_.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -106,6 +106,15 @@ So far, the following states are included in the dataset:
 *Added:* 2023-01-26.
 
 *Source:* State government, https://sos.ks.gov/elections/elections-results.html
+
+### Kentucky
+
+*Added:* 2023-03-22.
+
+*Source*: State government, https://elect.ky.gov/results/2020-2029/Pages/2022.aspx
+
+*Notes:*
+* Kentucky does not explicitly identify writein candidates, and it reports a large number of write-in candidates by name. This means that it is not clear which candidates were writeins in very local elections. Some candidates without a party label (that is, a blank value of `party_detailed`, as opposed to a `party_detailed` value of `INDEPENDENT`) may be write-in candidates, but candidates in nonpartisan elections will also have blank party labels.
 
 ### Louisiana
 
