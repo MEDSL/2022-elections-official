@@ -177,7 +177,7 @@ openelections:  https://github.com/openelections/openelections-data-nv/blob/mast
 
 *Notes:* 
 * Per the Nevada Secretary of State, "`*` in the Votes column indicates low turnout and is hidden to protect voter privacy." We retain these suppressed rows.
-* Nevada uses the notation notation `NPP` to mean "No Political Party". Of the 3 candidates listed under this label, 2 are described elsewhere as independents, and 1 as the "nonpartisan option".
+* Nevada uses the notation `NPP` to mean "No Political Party". Of the 3 candidates listed under this label, 2 are described elsewhere as independents, and 1 as the "nonpartisan option".
 * JANICE M RIDONDO and KATHLEEN V ANCHO both ran for 2 offices.
 
 ### New Hampshire
