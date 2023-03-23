@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map.png "Title")
+![](precinct_progress_map_.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -167,6 +167,18 @@ So far, the following states are included in the dataset:
 *Added:* 2022-12-07. 
 
 *Source:* State government, https://electionresults.mt.gov/ResultsList.aspx
+
+### Nevada
+
+*Added:* 2023-03-23.
+
+*Source:* All non-ballot questions are from OpenElections, 
+openelections:  https://github.com/openelections/openelections-data-nv/blob/master/2022/20221108__nv__general__precinct.csv . The ballot questions are from the state government, https://www.nvsos.gov/sos/elections/election-information/precinct-level-results .
+
+*Notes:* 
+* Per the Nevada Secretary of State, "`*` in the Votes column indicates low turnout and is hidden to protect voter privacy." We retain these suppressed rows.
+* Nevada uses the notation notation `NPP` to mean "No Political Party". Of the 3 candidates listed under this label, 2 are described elsewhere as independents, and 1 as the "nonpartisan option".
+* JANICE M RIDONDO and KATHLEEN V ANCHO both ran for 2 offices.
 
 ### New Hampshire
 
