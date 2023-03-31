@@ -36,6 +36,12 @@ So far, the following states are included in the dataset:
 
 * Small discrepancies (substantially less than 1%) are present between the precinct-level US House race and the announced statewide vote totals in the state's "RCV Detailed Report", which may be due to unresolved write-in votes. The other statewide races, however, match the announced statewide totals exactly.
 
+### Delaware
+
+*Added:* 2023-03-31. 
+
+*Source:* State government, https://elections.delaware.gov/results/html/index.shtml?electionId=GE2022#electionReport3
+
 ### District of Columbia
 
 *Added:* 2022-12-27. 
