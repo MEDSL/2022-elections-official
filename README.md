@@ -153,7 +153,7 @@ So far, the following states are included in the dataset:
 
 *Added:* 2023-03-17
 
-*Source: OpenElections, https://github.com/openelections/openelections-data-mi/tree/master/2022
+*Source:* OpenElections, https://github.com/openelections/openelections-data-mi/tree/master/2022
 
 * The major party candidates' vote totals in the Governor and US House races are all within 1% of their state- or district-wide totals except in district 7, where a few thousand votes are missing for both parties.
 * There are substantial rows that are duplicated, or duplicated up to vote totals. These are cases where distinguishing information was not available for different precincts. It should be assumed that these refer to different precincts, but without distinguishing precinct names we do not know which precinct is which. For this reason users should be wary of aggregating data by precinct name, since that may combine different precincts which are not disambiguated in the raw data.
