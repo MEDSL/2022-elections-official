@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map.png "Title")
+![](precinct_progress_map_.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -160,6 +160,12 @@ So far, the following states are included in the dataset:
 
 *Notes:*
 * Maryland reported results separately from its "Mail-in Ballot 1 Canvass", which was held on November 10, 2022, and its "Mail-in Ballot 2 Canvass", which was held on November 18, 2022. Our dataset retains this distinction.
+
+### Massachusetts
+
+*Added:* 2023-04-24.
+
+*Source:* State government, provided to us by email.
 
 ### Michigan
 
