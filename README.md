@@ -204,6 +204,7 @@ So far, the following states are included in the dataset:
 *Source:* State government, provided to us by email.
 
 *Notes:*
+* The state provides a precinct code as well as a natural language precinct name. Our `precinct` variable is constructed as `precinct code_precinct name`.
 * Some vote totals differ from the district-wide vote totals. Our data agree with the raw data provided by the state, who note and explain the sources of any disagreements, largely to do with awaiting provisional ballots or irresolvable clerical errors.
 
 ### Montana
