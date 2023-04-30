@@ -74,3 +74,6 @@ The date of the primary/election. Note that there will be some states with diffe
 
 ### readme_check:
 An indicator for whether an issue arose with the data that must be noted in a readme file, "TRUE" if so, and "FALSE" otherwise. Note that such a decision must be made by senior QA staff, and should be minimized to the greatest extent possible. 
+
+### magnitude:
+The number of seats to be filled, usually equal to the number of votes an elector can cast for the office
