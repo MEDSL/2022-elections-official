@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map.png "Title")
+![](precinct_progress_map_.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -35,6 +35,14 @@ So far, the following states are included in the dataset:
 * Questioned ballots are reported separately -- the meaning of these rows is explained here: http://web.archive.org/save/https://www.elections.alaska.gov/Core/votingatthepollsonelectionday.php. We retain this distinction by setting the `mode` field to the value `QUESTION` for these votes.
 
 * Small discrepancies (substantially less than 1%) are present between the precinct-level US House race and the announced statewide vote totals in the state's "RCV Detailed Report", which may be due to unresolved write-in votes. The other statewide races, however, match the announced statewide totals exactly.
+
+### Arkansas
+
+*Added:* 2023-05-05.
+
+*Source:* OpenElections, https://github.com/openelections/openelections-data-ar/tree/master/2022
+
+*Warning:*  Phillips County has not reported precinct-level election results for 2022. Our data include every other county.
 
 ### Connecticut
 
