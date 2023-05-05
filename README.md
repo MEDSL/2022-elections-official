@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map_.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -220,6 +220,17 @@ So far, the following states are included in the dataset:
 *Added:* 2022-12-07. 
 
 *Source:* State government, https://electionresults.mt.gov/ResultsList.aspx
+
+### Nebraska
+
+*Added:* 2023-05-05.
+
+*Source*: State government, https://electionresults.nebraska.gov/resultsCTY.aspx?type=SW&rid=11779&osn=105&map=CTY
+
+*Notes:*
+* We assign Nebraska's nonpartisan unicameral body the office value `STATE SENATE`. We also assign it `party_detailed` and `party_simplified` values of `NONPARTISAN`, even though candidates typically receive party endorsements, because parties are not recognized in that chamber.
+
+* Party labels were not included in the raw data. We manually ensured that candidates have party labels in all contests for state or federal office. Due to the volume of local offices available, however, we assumed that all such offices are nonpartisan (an assumption reinforced by spot checking) and did not manually assign parties for local offices. So, when using the party labels for local elections in this state, we suggest double checking that any substate offices you include are indeed nonpartisan.
 
 ### Nevada
 
