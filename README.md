@@ -315,7 +315,13 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
 
   This approach does result in records of candidates actually recieving 0 votes in a precinct in which they were selectable being dropped, but we believe this is preferable to not dropping these rows, because the dataset is unmanageably large when all the fictitious 0-vote rows are included.
 
-* Ohio does not provide precinct-level vote totals for write-in candidates, but they do provide county-level totals. The cleaned dataset includes records for these county totals with the precinct name "COUNTY FLOATING". 
+* Ohio does not provide precinct-level vote totals for write-in candidates, but they do provide county-level totals. The cleaned dataset includes records for these county totals with the precinct name "COUNTY FLOATING".
+
+### Oregon
+
+*Added:* 2023-05-16.
+
+*Source:* OpenElections, https://github.com/openelections/openelections-data-or/tree/master/2022
 
 ### Pennsylvania
 
