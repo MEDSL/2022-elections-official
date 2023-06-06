@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map.png "Title")
+![](precinct_progress_map_.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -279,6 +279,23 @@ openelections:  https://github.com/openelections/openelections-data-nv/blob/mast
 *Added:* 2023-01-11.
 
 *Source:* State government, https://electionresults.sos.state.nm.us/ and https://candidateportal.servis.sos.state.nm.us/CandidateList.aspx?eid=2838&cty=99
+
+### New York
+
+*Added:* 2023-06-06.
+
+*Source:* OpenElections: https://github.com/openelections/openelections-data-ny/tree/master/2022
+
+*Notes:*
+* New York's election result reporting contains unexplained discrepancies between the sum of precinct-level vote counts and the candidate-party total vote counts across their whole electoral district. The results for this state should be used with caution and cross-checked carefully against the raw data sources. In the `US SENATE` and `GOVERNOR` races these discrepancies are fairly minor: they are roughly on the order of about 1% or less of the candidate-party level vote total. Many vote totals for `US HOUSE` candidates are also exactly correct. However, a handful of  districts have vote totals that are larger or smaller than the correct amount by single digit percentages. One known cause of these issues is that total votes were reported alongside vote counts by mode without consistent disambiguation across counties. To handle this at scale, we identified the counties where this issue occurred, and then assigned the maximum vote total for each candidate-office-precinct combination (or else the only one for which no specific mode was provided) the `mode` value `TOTAL`. The medicine was slightly too strong, since the double-counting is often not exact; in particular, if not every mode is reported, then the `TOTAL` votes will be slightly larger than the votes by mode, and dropping `TOTAL` votes will lose some votes that were not reported by mode. However, this solution is more correct than not: the band-aid of assuming that votes without specified modes are total votes and not counting them in the aggregate vote totals does bring the sums much closer in line to the candidates' real total votes. For example, after this fix, the candidate-by-candidate vote totals in the governor race became about 2% closer to the real vote totals so that now they are only off by a few tenths or hundredth of a percent. In some counties we also exercised discretion and did not assume that unspecified modes represented total vote counts if they were much smaller than the sum of the other votes by mode. We publish the results despite the non-exact vote totals because this scale of issues is no largar then expected: New York's precinct-level election results had a similar scale of discrepancies in 2020, and very dramatically larger discrepancies in 2018.
+
+* Different counties broke down the votes by mode in different ways. Some might separate out just absentee votes, others might break down election day versus provisional versus absentee versus affidavit, and so on. Whenever the mode was specified, we retain the mode value that OpenElections assigned to the vote total, based on what the county reported. Whenever the mode was not specified, we apply a mode value of `UNSPECIFIED`. Users should therefore be very careful to not assume that, say, the `FEDERAL` value is applied to all federal votes. In counties where that value is present, it is reasonable to assume that it is. But in counties where that value is not present, federal ballots will be included in the `UNSPECIFIED` mode category.
+
+* New York has fusion tickets, so candidates may have more than one party nomination, and votes are reported separately under each party label.
+
+* Four rows were duplicated up to vote totals (that is, all of the information is the same in the two rows, but the candidate-precinct combination corresponds to two different vote totals) in the raw data. This usually means that some distinguishing information was not included in the data reporting. In the case of these four rows, we suspect they are intending to refer to two different precincts.
+
+* `PUBLIC COUNTER` is a number reported at the close of a polling station (per the New York poll worker manual). We retain this value in the `candidate` field.
 
 ### North Carolina
 
