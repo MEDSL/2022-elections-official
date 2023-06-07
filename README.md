@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map_.png "Title")
+![](precinct_progress_map.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -369,6 +369,19 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
 *Added:* 2022-12-25. 
 
 *Source:* State government, https://sos.tn.gov/elections/results
+
+### Texas
+
+*Added:* 2023-06-07.
+
+*Source*: State government, https://data.capitol.texas.gov/dataset/2022_general
+
+*Notes*:
+* These data are VTD-level data. VTDs are (per the Texas capitol data portal https://data.capitol.texas.gov/dataset/vtds) "the census geographic equivalent of county election precincts [...] created for the purpose of relating 2020 Census population data to election precinct data". When counties in Texas report election results, in contrast, they typically do so using the county-defined voting precincts, which are distinct from VTDs. For an effort to collect election results at the county-defined precincts, please consult OpenElections's work on that problem: https://github.com/openelections/openelections-data-tx/issues/442
+
+* Only candidates' last names are reported in the raw data. The scale of the data, especially for local offices, prevents us from confidently joining full names onto the reported last names.
+
+* Very small discrepancies
 
 ### Vermont
 
