@@ -381,7 +381,7 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
 
 * Only candidates' last names are reported in the raw data. The scale of the data, especially for local offices, prevents us from confidently joining full names onto the reported last names.
 
-* Very small discrepancies
+* Very small unexplained discrepancies are observed in some federal races between the sum of a candidate's precinct-level votes and their official total vote count. These differences are always well below 1%.
 
 ### Vermont
 
