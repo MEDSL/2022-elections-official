@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map.png "Title")
+![](precinct_progress_map_.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -382,6 +382,12 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
 * Only candidates' last names are reported in the raw data. The scale of the data, especially for local offices, prevents us from confidently joining full names onto the reported last names.
 
 * Very small unexplained discrepancies are observed in some federal races between the sum of a candidate's precinct-level votes and their official total vote count. These differences are always well below 1%.
+
+### Utah
+
+*Added:* 2023-06-08.
+
+*Source* OpenElections, https://github.com/openelections/openelections-data-ut/tree/master/2022
 
 ### Vermont
 
