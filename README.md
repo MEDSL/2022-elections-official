@@ -43,7 +43,7 @@ So far, the following states are included in the dataset:
 *Source*: OpenElections, https://github.com/openelections/openelections-data-az/tree/master/2022
 
 *Notes:*
-* Four rows are duplicated up to vote totals. There is not enough information in the original datasets to distinguish them. We suspect the different is not vote mode. The accuracy of the aggregate vote checks suggests that these are all real vote totals but with distinguishing information missing.
+* Four rows are duplicated up to vote totals. There is not enough information in the original datasets to distinguish them. We suspect the difference is not vote mode. The accuracy of the aggregate vote checks suggests that these are all real vote totals but with distinguishing information missing.
 * Vote totals from election recounts are denoted with the `stage` value `GEN RECOUNT`, meaning a general election recount.
 
 ### Arkansas
@@ -121,7 +121,7 @@ So far, the following states are included in the dataset:
 *Source:* State government, https://sos.idaho.gov/elections-division/election-results/
 
 *Notes:*
-* The data were released by the state in spreadsheets with baroque semi-structured designs, so we wrote a custom script to parse those spreadsheets. While we are not aware of any outstanding errors produced by this process, users should be aware that the re-structuring process was substantially involved for this state, and that some information about office descriptions may have been implicitly encoded visually rather than being written out explicitly and consequently would not have been capturable by an automated parser.
+* The data were released by the state in spreadsheets with baroque semi-structured designs, so we wrote a custom script to parse those spreadsheets. While we are not aware of any outstanding errors produced by this process, users should be aware that the re-structuring process was substantially involved for this state, and that some information about office descriptions may have been implicitly encoded visually rather than being written out explicitly, and consequently would not have been capturable by an automated parser.
 
 * Rows labeled 'PERCENT' are nearly always -- but not quite always -- between 0 and 1. This suggests that they are usually proportions, not percentages. We have not altered the values or the labels.
 
@@ -149,7 +149,7 @@ So far, the following states are included in the dataset:
 *Notes:*
 * Only 36 of Indiana's 92 counties released precinct-level election results in 2022. In 2020, only 56 counties ultimately released precinct-level results. We do not expect full 2022 precinct-level results from Indiana.
 
-* We cannot conduct our usual county-level vote aggregation check in this state because counties reported at _either_ the precinct level or the county level, so the two levels of vote totals cannot be compared. So if you do want to use these data, we caution that results are non-systematically missing. Please carefully check the accuracy of any data you use from this state.
+* We cannot conduct our usual county-level vote aggregation check in this state because counties reported at _either_ the precinct level or the county level, so the two levels of vote totals cannot be compared. So if you do want to use these data, we caution that results are systematically missing. Please carefully check the accuracy of any data you use from this state.
 
 ### Iowa
 
