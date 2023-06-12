@@ -58,7 +58,7 @@ So far, the following states are included in the dataset:
 
 *Added:* 2023-06-12. **One county missing.**
 
-*Source:* https://statewidedatabase.org/d20/g22.html
+*Source:* State government, https://statewidedatabase.org/d20/g22.html
 
 *Notes:*
 * Precinct-level votes from Tehama county are not yet available. This county is in California's US House district 1, so the candidates in that district have some votes missing.
