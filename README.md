@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map.png "Title")
+![](precinct_progress_map_.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. Election results are being hosted here while we compile a full national dataset and ensure the data meets our quality assurance standards. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -444,6 +444,15 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
 *Added:* 2023-02-03.
 
 *Source:* OpenElections, https://github.com/openelections/openelections-data-wv/tree/master/2022
+
+### Wisconsin
+
+*Added:* 2023-06-12.
+
+*Source:* https://elections.wi.gov/elections/election-results#accordion-5601
+
+*Notes:*
+* Jurisdiction names are not supplied alongside precinct and county names in the original election results, but the precinct names are informative enough to determine which jurisdiction contains that precinct. So, the `jurisdiction_name` field was constructed out of precinct names, initially by extracting substrings from the precinct names using regular expressions, and then matching those jurisdiction names to a dictionary of jurisdiction FIPS codes. This automatic match is necessarily somewhat error-ridden, so the `jurisdiction_name` and `jurisdiction_fips` values were manually verified and repaired, jurisdiction by jurisdiction.
 
 ### Wyoming
 
