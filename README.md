@@ -227,6 +227,15 @@ So far, the following states are included in the dataset:
 
 *Source:* State government, https://electionresults.sos.state.mn.us/Select/MediaFiles/Index?ersElectionId=149
 
+### Mississippi
+
+*Added:* 2023-06-12.
+
+*Source:* OpenElections, https://github.com/openelections/openelections-data-ms/tree/master/2022
+
+*Notes:*
+* In Hinds county precinct 16, two different write-in vote totals are reported for the `US HOUSE` district 2 election, one receiving 10 votes and the other receiving 1 vote. We leave them separate in case there is an underlying distinction between these two write-in vote totals.
+
 ### Missouri
 
 *Added:* 2023-04-29.
