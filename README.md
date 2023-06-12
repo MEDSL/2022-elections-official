@@ -36,6 +36,16 @@ So far, the following states are included in the dataset:
 
 * Small discrepancies (substantially less than 1%) are present between the precinct-level US House race and the announced statewide vote totals in the state's "RCV Detailed Report", which may be due to unresolved write-in votes. The other statewide races, however, match the announced statewide totals exactly.
 
+### Arizona
+
+*Added:* 2023-06-12.
+
+*Source*: OpenElections, https://github.com/openelections/openelections-data-az/tree/master/2022
+
+*Notes:*
+* Four rows are duplicated up to vote totals. There is not enough information in the original datasets to distinguish them. We suspect the different is not vote mode. The accuracy of the aggregate vote checks suggests that these are all real vote totals but with distinguishing information missing.
+* Vote totals from election recounts are denoted with the `stage` value `GEN RECOUNT`, meaning a general election recount.
+
 ### Arkansas
 
 *Added:* 2023-05-05. One county missing.
