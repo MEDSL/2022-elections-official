@@ -48,7 +48,7 @@ So far, the following states are included in the dataset:
 
 ### Arkansas
 
-*Added:* 2023-05-05. One county missing.
+*Added:* 2023-05-05. **One county missing.**
 
 *Source:* OpenElections, https://github.com/openelections/openelections-data-ar/tree/master/2022
 
@@ -56,7 +56,7 @@ So far, the following states are included in the dataset:
 
 ### California
 
-*Added:* 2023-06-12. One county missing.
+*Added:* 2023-06-12. **One county missing.**
 
 *Source:* https://statewidedatabase.org/d20/g22.html
 
@@ -142,7 +142,7 @@ So far, the following states are included in the dataset:
 
 ### Indiana
 
-*Added:* 2022-12-15. Numerous counties missing.
+*Added:* 2022-12-15. **Numerous counties missing.**
 
 *Source:* County governments, https://enr.indianavoters.in.gov/site/index.html
 
