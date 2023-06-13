@@ -1,9 +1,10 @@
 ################################################################################
 # Generate a hexmap of the US, with states coloured by some binary status
 #
-# Dependency (both in this repository):
+# Dependency (all in this repository):
 #	merge_on_statecodes.csv, a spreadsheet mapping state names to IDs
 #	statuses.csv, a spreadsheet specifying the status of each state
+#	hexmap.Rdata
 #
 # written by sbaltz at mit,
 #	late 2022,
