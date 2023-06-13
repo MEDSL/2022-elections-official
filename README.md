@@ -3,7 +3,7 @@
 ![](precinct_progress_map.png "Title")
 
 ## Repository info
-This is the MEDSL repository for election returns from the 2022 General Election in the United States. We have finished compiling precinct-level election results from every state, but a few counties are missing, and a few variable values may still need to be fully validated and corrected. If you notice any issues in our results, please do open an Issue in this repository. 
+This is the MEDSL repository for election returns from the 2022 General Election in the United States. We have finished compiling precinct-level election results from every state, but a few counties have not reported precinct-level results, and a few variable values may still need to be fully validated and corrected. If you notice any issues in our results, please do open an Issue in this repository. 
 
 ## General usage notes
 ### Methods and accuracy
