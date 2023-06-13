@@ -1,0 +1,52 @@
+"state","state_po","state_fips","state_cen","state_ic"
+"Alabama","AL",1,63,41
+"Alaska","AK",2,94,81
+"Arizona","AZ",4,86,61
+"Arkansas","AR",5,71,42
+"California","CA",6,93,71
+"Colorado","CO",8,84,62
+"Connecticut","CT",9,16,1
+"Delaware","DE",10,51,11
+"District of Columbia","DC",11,53,55
+"Florida","FL",12,59,43
+"Georgia","GA",13,58,44
+"Hawaii","HI",15,95,82
+"Idaho","ID",16,82,63
+"Illinois","IL",17,33,21
+"Indiana","IN",18,32,22
+"Iowa","IA",19,42,31
+"Kansas","KS",20,47,32
+"Kentucky","KY",21,61,51
+"Louisiana","LA",22,72,45
+"Maine","ME",23,11,2
+"Maryland","MD",24,52,52
+"Massachusetts","MA",25,14,3
+"Michigan","MI",26,34,23
+"Minnesota","MN",27,41,33
+"Mississippi","MS",28,64,46
+"Missouri","MO",29,43,34
+"Montana","MT",30,81,64
+"Nebraska","NE",31,46,35
+"Nevada","NV",32,88,65
+"New Hampshire","NH",33,12,4
+"New Jersey","NJ",34,22,12
+"New Mexico","NM",35,85,66
+"New York","NY",36,21,13
+"North Carolina","NC",37,56,47
+"North Dakota","ND",38,44,36
+"Ohio","OH",39,31,24
+"Oklahoma","OK",40,73,53
+"Oregon","OR",41,92,72
+"Pennsylvania","PA",42,23,14
+"Rhode Island","RI",44,15,5
+"South Carolina","SC",45,57,48
+"South Dakota","SD",46,45,37
+"Tennessee","TN",47,62,54
+"Texas","TX",48,74,49
+"Utah","UT",49,87,67
+"Vermont","VT",50,13,6
+"Virginia","VA",51,54,40
+"Washington","WA",53,91,73
+"West Virginia","WV",54,55,56
+"Wisconsin","WI",55,35,25
+"Wyoming","WY",56,83,68
