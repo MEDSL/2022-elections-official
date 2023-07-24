@@ -52,7 +52,7 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 *Source:* OpenElections, https://github.com/openelections/openelections-data-ar/tree/master/2022
 
-*Warning:*  Phillips County has not reported precinct-level election results for 2022. Our data include every other county.
+*Warning:*  Phillips County was not able to compile precinct-level election results for 2022. Our data include every other county, but based on conversations with the Phillips County elections office, we do not anticipate that precinct-level results from the 2022 election in that county will be made available.
 
 ### California
 
