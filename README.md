@@ -1,6 +1,6 @@
 # 2022-elections-official
 
-![](precinct_progress_map.png "Title")
+![](precinct_progress_map_.png "Title")
 
 ## Repository info
 This is the MEDSL repository for election returns from the 2022 General Election in the United States. We have finished compiling precinct-level election results from every state, but a few counties have not reported precinct-level results, and a few variable values may still need to be fully validated and corrected. If you notice any issues in our results, please do open an Issue in this repository. 
@@ -10,7 +10,7 @@ This is the MEDSL repository for election returns from the 2022 General Election
 For any questions about how we clean and Quality Assure these data, and how accurate they are, please consult this paper, which answers those questions for our last three data efforts (2016, 2018, and 2020): https://www.nature.com/articles/s41597-022-01745-0. We ask that when you are using the data, please cite the dataset itself, and only cite that paper for discussions of how the data were created and why they are reliable.
 
 ### Warnings
-* As noted below, numerous counties did not report precinct data in Indiana and one did not report in Arkansas, and we have one county left to include in California
+* As noted below, numerous counties did not report precinct-level data in Indiana, and one did not report in Arkansas.
 * In general, users need to exercise real caution when computing descriptive statistics. Please make sure you understand exactly which rows belong in the computation you're performing. Here are two of the most common issues:
    * Sometimes the way that states report data generates fictitious zero-vote rows, where a candidate is recorded as getting no votes in a precinct where they did not actually appear on the ballot. It is not generally possible to ensure that all real zero-vote totals are recorded while no fictitious zero-vote totals are recorded. This could affect, for example, measures of central tendency.
    * We typically retain exactly the modes that states report. This can lead to double-counting if users do not select the correct modes, for example if modes are split apart *and* a mode value of `TOTAL` is included. Users should make sure that any analysis includes votes of each mode once.
@@ -56,13 +56,14 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 ### California
 
-*Added:* 2023-06-12. **One county missing.**
+*Added:* 2023-06-12. 
+
+*Last modified:* 2023-07-28.
 
 *Source:* State government, https://statewidedatabase.org/d20/g22.html
 
 *Notes:*
-* Precinct-level votes from Tehama county are not yet available. This county is in California's US House district 1, so the candidates in that district have some votes missing.
-* Other than those vote totals which are affected by the missing county, the aggregate vote totals are exactly correct or within a few percentage points for every `US SENATE`, `GOVERNOR`, and `US HOUSE` candidate.
+* The aggregate vote totals are exactly correct or within a few percentage points for every `US SENATE`, `GOVERNOR`, and `US HOUSE` candidate.
 * The precinct IDs in our dataset are formed by concatenating the precinct number, then an underscore, then (all zero-padded) the ADDIST (assembly district), CDDIST (congressional district), SDDIST (senate district), and bedist (board of equalization district). These variable definitions are taken from here: https://statewidedatabase.org/info/metadata/precinct_data.html
 * The statewide database represents vote mode as a semi-standardized substring of a geographic ID: Absentee vote precincts have an `A` at the end of one of the IDs which we use to construct the precinct ID. However, crucially, it is possible for that ID to end in an `A` without being an absentee precinct; it may just have an ID that happens to have an `A` in its final index. Our approach is to check for cases where a precinct ends in an A, and then there's also a variant of that precinct which does not end in an A, or alternatively, a precinct ends in AA and there is also an entry where the precinct ID is the same but ending only in one A. In either of those two cases, the precinct that has one more A on the end contains absentee votes, and the other contains non-absentee votes. In these cases we drop the final A from the absentee precinct so that the precinct IDs match, and we assign `mode` values accordingly. On the other hand, for any precinct ID which is not a member of such a pair, we take the votes to represent total votes. So if for example there is a precinct that ends in an A and there is no precinct in the data with the same ID but ending in one less A, then there is not enough information in the dataset to know whether this is a precinct that only reported absentee votes, or a precinct that did not report votes by mode and simply happens to have a name which ends in an A. In those cases we assume the vote total is the total number of votes in that precinct by any mode. There are two checks which reassure us that our approach basically works. First, incorrectly combining votes to have the same mode and the same precinct ID would create duplicated rows or rows which are duplicated up to vote totals, but the dataset does not contain any. Second, when we check precincts that have only one vote mode, we do not see any case that shows signs of binning incorrectly non-absentee and absentee votes into both being absentee votes. We also see very few precincts where we only report absentee votes, which suggests that we aren't actually dropping 'A's that should be there and thinking they mean 'absentee' when they're just part of the precinct identifier, with perhaps some very few exceptions. We should acknowledge, though, that these are imperfect checks on a band-aid solution to an ambiguity which is baked into the original dataset. Users would do well to double-check the face validity of any mode values they use from this state.
 
