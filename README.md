@@ -112,9 +112,6 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 *Source:* State government, https://elections.hawaii.gov/election-results/
 
-*Notes:*
-* The precinct-level results for the US Senate race report slightly fewer votes than the statewide vote counts do, but these discrepancies are very small (a few dozen votes), and they only affects two candidates, neither of whom are the major party nominees. The US House and governor races match exactly the district- or state-level vote counts.
-
 ### Idaho
 
 *Added:* 2023-02-08.
