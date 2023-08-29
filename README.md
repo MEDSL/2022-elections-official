@@ -110,6 +110,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 *Added:* 2022-01-26.
 
+*Last modified*: 2023-08-29.
+
 *Source:* State government, https://elections.hawaii.gov/election-results/
 
 ### Idaho
