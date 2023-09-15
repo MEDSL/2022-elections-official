@@ -231,6 +231,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 *Added:* 2023-06-12.
 
+*Updated:* 2023-09-15.
+
 *Source:* OpenElections, https://github.com/openelections/openelections-data-ms/tree/master/2022
 
 *Notes:*
