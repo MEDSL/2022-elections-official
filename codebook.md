@@ -13,7 +13,7 @@ The upper case party name for the given entry. The most common entries will be D
 The upper case party name for the given entry. The entries will be one of: DEMOCRAT, REPUBLICAN, LIBERTARIAN, OTHER, and NONPARTISAN. Propositions, amendment, and other referenda should be leave this field as blank "". If there are complications, reach out to one of the QA checkers. 
 
 ### mode:
-The upper case voting mode for how the election results will be reported. For results that do not offer disaggregation by mode, it will be "TOTAL". For other states that do offer the distinction, then some common entries might include: ABSENTEE, ELECTRONIC, WRITE-IN, PROVISIONAL, ONE-STOP, etc. It is important to note that some special attention will need to be paid to absentee, which is often reported, but only at the level of county, and can therefore lead to double counting. Most of these errors/issues can be caught by aggregating results up to election race outcomes. Therefore, consult with the QA checkers for insight to your particular state. 
+The upper case voting mode for how the election results will be reported. For results that do not offer disaggregation by mode, it will be "TOTAL". For other states that do offer the distinction, then some common entries might include: ABSENTEE, ELECTRONIC, WRITE-IN, PROVISIONAL, ONE-STOP, etc.
 
 ### votes:
 The numeric value of votes for a given entry. Ensure that commas and the like are not included so as to ensure that it is numeric and not string, and any missing values should be coded as 0. 
