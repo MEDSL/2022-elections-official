@@ -391,6 +391,9 @@ https://www.ncsbe.gov/results-data/election-results/historical-election-results-
 
 *Source*: OpenElections, https://github.com/openelections/openelections-data-sc/tree/master/2022
 
+*Notes:*
+* There are duplicated rows, or rows duplicated up to the votes column, all of which are either `FAILSAFE`, `PROVISIONAL`, or `FAILSAFE PROVISIONAL` ballots, which in the state election reporting were reported using the same label at the county level, but may be split into multiple rows. We retain them as separate rows rather than aggregating them together in the interest of not destroying information. The total number of these ballots within a county is always correct.
+
 ### South Dakota
 
 *Added:* 2023-01-15. 
