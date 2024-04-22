@@ -125,6 +125,8 @@ For any questions about how we clean and Quality Assure these data, and how accu
 
 * Rows labeled 'PERCENT' are nearly always -- but not quite always -- between 0 and 1. This suggests that they are usually proportions, not percentages. We have not altered the values or the labels.
 
+* Some contests in Power County are missing precinct-level vote counts due to what appears to be a data type error in the Excel files provided by the state.
+
 * The raw data reports some precincts multiple times for the office COLLEGE OF WESTERN IDAHO TRUSTEE, but with different vote totals. We retain these rows, though this practice causes nearly duplicated rows which are identical up to vote totals (and in, one case, a coincidental exact duplicate), since they presumably refer to different precincts but using non-unique identifiers.
 
 * Many different types of meta-information at different levels of aggregation are reported in the raw data under the label 'VOTING STATISTICS'. Where this information is exactly duplicated, we have dropped it. But in the many cases where the information represents different vote totals under the same label without explicit disambiguation in the raw data, we leave it as is.
