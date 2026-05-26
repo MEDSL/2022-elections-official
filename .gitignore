@@ -1,0 +1,8 @@
+analysis/outputs/
+analysis/data/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+
